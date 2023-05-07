@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  --Font-text: "Zilla Slab", serif;
+  --Font-title: "Asap Condensed", sans-serif;
+  --box: #595959;
+}
+
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap");
+
+/* NAVBAR */
+.header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  box-shadow: 0 8px 24px rgba(96, 133, 244, 0.422);
+  position: fixed;
+  background: rgb(98, 98, 98);
+  background: linear-gradient(
+    90deg,
+    rgba(98, 98, 98, 1) 35%,
+    rgba(43, 43, 43, 1) 58%,
+    rgba(0, 0, 0, 1) 88%
+  );
+}
+.navbar ul {
+  display: flex;
+  gap: 80px;
+}
+.header img {
+  width: 120px;
+  height: 120px;
+  margin: 10px 0px 10px 0px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%; /*Safari y Chrome*/
+  -moz-border-radius: 50%; /*Firefox*/
+  -o-border-radius: 50%; /*Opera*/
+  -ms-border-radius: 50%; /*IE 8*/
+}
+.navbar {
+  display: flex;
+}
+
+#menu-toggle {
+  display: none;
+}
+.navbar-link {
+  color: yellow;
+  font-weight: 600;
+}
+.navbar a {
+  background-color: rgba(240, 240, 245, 0.488);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 13x;
+}
+.navbar a:hover {
+  background: none;
+  transition: 0.5s;
+}
+.bars-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+.bars-menu span {
+  height: 1.5px;
+  width: 30px;
+  background: pink;
+  transition: transform 0.8;
+  display: none;
+}
+#menu-toggle:checked ~ .bars-menu span:first-child {
+  position: absolute;
+  top: 0;
+  transform: rotate(135deg);
+}
+#menu-toggle:checked ~ .bars-menu span:nth-child(2) {
+  opacity: 0;
+}
+#menu-toggle:checked ~ .bars-menu span:last-child {
+  position: absolute;
+  top: 0;
+  transform: rotate(225deg);
+}
+@media (max-width: 600px) {
+  .navbar ul {
+    background: blue;
+    width: 100%;
+    position: absolute;
+    height: calc(100vh- 100px);
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    transform: translateX(200%);
+    transition: all 0.4s ease;
+  }
+  .bars-menu span {
+    display: block;
+  }
+  #menu-toggle:checked ~ .navbarlist {
+    /* display: flex; */
+    transform: translateX(0);
+  }
+}
+/* SECTION-HERO */
+
+.section-hero {
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(43, 43, 43, 1) 58%,
+    rgba(98, 98, 98, 1) 88%
+  );
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  flex-direction: row-reverse;
+}
+
+.hero-img {
+  width: 30%;
+  height: 50%;
+  border-radius: 2em;
+  -webkit-border-radius: 0.2em; /*Safari y Chrome*/
+  -moz-border-radius: 0.2em; /*Firefox*/
+  -o-border-radius: 0.2em; /*Opera*/
+  -ms-border-radius: 0.2em; /*IE 8*/
+  box-shadow: white;
+  margin: 0 0 0 125px;
+}
+
+.hero-text {
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 180px 60px 0 0;
+  height: 50%;
+  width: 50%;
+}
+.line-efect {
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 35px;
+  font-family: var(--Font-text);
+  display: inline-block;
+  position: relative;
+}
+.line-efect::before,
+.line-efect::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1.5px;
+  background-color: white;
+  top: 1.3rem;
+}
+.line-efect::before {
+  left: -55px;
+}
+.line-efect::after {
+  right: -55px;
+}
+.hero-text h2 {
+  font-family: var(--Font-text);
+  font-size: 40px;
+  font-weight: 900;
+}
+.hero-text p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  margin: 20px 0;
+}
+.hero-text a {
+  background-color: var(--box);
+  color: white;
+  border-radius: 5%;
+  -webkit-border-radius: 5%; /*Safari y Chrome*/
+  -moz-border-radius: 5%; /*Firefox*/
+  -o-border-radius: 5%; /*Opera*/
+  -ms-border-radius: 5%; /*IE 8*/
+  padding: 1rem 1rem;
+  margin: 20px;
+}
+.hero-text a:hover,
+.hero-text h5:hover {
+  background-color: gold;
+  color: black;
+  transition: 0.5s;
+}
+
+/* ABOUT US */
+.section-about-us {
+  padding: 20px;
+  height: 45rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 35%,
+    rgba(43, 43, 43, 1) 58%,
+    rgba(98, 98, 98, 1) 88%
+  );
+  padding: 65px;
+}
+
+.container-text-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  font-size: 30px;
+  color: #ffffffe5;
+  margin-bottom: 50px;
+  gap: 40px;
+  text-align: center;
+}
+
+.container-text-about h1 {
+  font-family: var(--Font-text);
+  font-size: 70px;
+  color: #ffffff;
+  font-weight: bolder;
+  font-family: var(--heroletter);
+  letter-spacing: 10px;
+}
+
+.container-text-about p {
+  font-family: var(--Font-text);
+}
+.icons-about {
+  color: white;
+}
+.icons-about ul {
+  display: flex;
+  flex-direction: row;
+}
+.icons-about ul li {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0 30px 0 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(240, 240, 245);
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+}
+.icons-about ul li i {
+  margin-right: 20px;
+}
+.icons-about ul li:hover {
+  transition: 0.5s;
+  background: gold;
+  color: black;
+}
+/* WPP  */
+.wpp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.wpp:hover {
+  text-decoration: none;
+  color: #25d366;
+  background-color: #fff;
+}
+
+.my-float {
+  margin-top: 16px;
+}
