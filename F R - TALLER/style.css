@@ -106,7 +106,7 @@
     background: blue;
     width: 100%;
     position: absolute;
-    height: calc(100vh- 100px);
+    height: 300px;
     top: 80px;
     left: 0;
     flex-direction: column;
@@ -205,6 +205,11 @@
   color: black;
   transition: 0.5s;
 }
+@media (max-width: 600px) {
+  .hero-img img {
+    display: none;
+  }
+}
 
 /* ABOUT US */
 
@@ -270,6 +275,11 @@
 .icons-about ul li:hover {
   transition: 0.5s;
   background: gold;
+}
+@media (max-width: 600px) {
+  .section-about-us {
+    display: none;
+  }
 }
 
 /* CARDS */
@@ -399,6 +409,14 @@ svg {
   color: black;
   transition: 0.5s;
 }
+@media (max-width: 600px) {
+  .container-card {
+    padding: 50px;
+  }
+  .card {
+    height: 150;
+  }
+}
 /* FORM-CONSULT */
 .consult-form {
   height: 50rem;
@@ -409,9 +427,7 @@ svg {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 50%;
 }
-
 .form {
   width: 400px;
   padding: 15px 0;
@@ -539,7 +555,7 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  /* gap: 40px; */
 }
 .details-pay ul li {
   list-style: disc;
@@ -548,12 +564,23 @@ svg {
 }
 .details-pay p {
   font-family: var(--cardletter);
-  font-size: 20px;
+  font-size: 14px;
   text-align: center;
   text-transform: uppercase;
 }
 .map {
   margin-top: 50px;
+}
+@media (max-width: 600px) {
+  .consult-form {
+    display: none;
+  }
+  .consult-form {
+    margin-right: 20px;
+  }
+  .details-payments h3 {
+    font-size: 20px;
+  }
 }
 /* SECTION-DETAILS */
 .details-section {
@@ -588,6 +615,11 @@ svg {
 .icons-texto {
   font-size: 30px;
   color: var(--colornav);
+}
+@media (max-width: 600px) {
+  .map {
+    display: none;
+  }
 }
 /* FOOTER */
 .footer-container {
@@ -711,4 +743,9 @@ svg {
 
 .my-float {
   margin-top: 16px;
+}
+@media (max-width: 600px) {
+  .wpp {
+    display: none;
+  }
 }
