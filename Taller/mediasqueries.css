@@ -1,0 +1,202 @@
+:root {
+  --Font-text: "Zilla Slab", serif;
+  --Font-title: "Asap Condensed", sans-serif;
+  --box: #595959;
+  --background: #020000;
+  --card: #17141d;
+  --btn: rgba(69, 9, 9, 0.548);
+}
+
+/* NAVBAR */
+@media (max-width: 600px) {
+  .navbar ul {
+    background: var(--btn);
+    width: 100%;
+    position: absolute;
+    height: 250px;
+    top: 80px;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    transform: translateX(200%);
+    transition: all 0.4s ease;
+  }
+  .navbarlist li a {
+    background: var(--box);
+    font-size: 13px;
+    border: 1px solid white;
+  }
+  .navbar ul {
+    display: flex;
+    gap: 30px;
+  }
+  .bars-menu span {
+    display: block;
+  }
+  #menu-toggle:checked ~ .navbarlist {
+    /* display: flex; */
+    transform: translateX(0);
+  }
+}
+/* HERO-SECTION */
+@media (max-width: 600px) {
+  .hero-img img {
+    display: none;
+  }
+}
+/* ABOUT-US */
+@media (max-width: 600px) {
+  .container-text-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: #ffffffe5;
+    text-align: center;
+  }
+
+  .container-text-about h1 {
+    font-family: var(--Font-title);
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    text-shadow: -2px 2px 6px var(--btn);
+  }
+
+  .container-text-about p {
+    font-family: var(--Font-text);
+    font-size: 23px;
+    padding: 15px;
+  }
+  .icons-about {
+    color: white;
+  }
+  .icons-about ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .icons-about ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 100;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    background-color: rgb(240, 240, 245);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px; /*Safari y Chrome*/
+    -moz-border-radius: 10px; /*Firefox*/
+    -o-border-radius: 10px; /*Opera*/
+    -ms-border-radius: 10px; /*IE 8*/
+    color: black;
+  }
+
+  .icons-about ul li:hover {
+    transition: 0.5s ease-out;
+    background: var(--btn);
+    color: white;
+  }
+}
+/* CARD */
+@media (max-width: 600px) {
+  .container-card {
+    padding: 50px;
+  }
+  .card {
+    height: 150;
+  }
+  .card:hover ~ .card {
+    position: relative;
+    left: 40px;
+    transition: 0.4s ease-out;
+  }
+}
+/* FORM-CONSULT */
+@media (max-width: 600px) {
+  /* FORM-CONSULT */
+  .consult-form {
+    height: 50rem;
+    width: 100%;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .form {
+    width: 400px;
+    padding: 15px 0;
+    display: flex;
+    gap: 10px;
+    margin: 0 1px 0 0;
+  }
+  .form button:hover {
+    background-color: var(--btn);
+    scale: 125%;
+    color: white;
+    transition: 0.01;
+  }
+
+  .details-payments {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .line-efect2 {
+    font-family: var(--Font-title);
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .line-efect2::before,
+  .line-efect2::after {
+    width: 25px;
+    height: 1px;
+  }
+  .line-efect2::before {
+    top: 8px;
+  }
+  .line-efect2::after {
+    top: 8px;
+  }
+  .details-pay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 40px; */
+    padding: 20px;
+    margin-left: 20px;
+  }
+  .details-pay ul li {
+    list-style: disc;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .details-pay p {
+    font-family: var(--cardletter);
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+/* DETAILS */
+@media (max-width: 600px) {
+  .map {
+    display: none;
+  }
+}
+/* FOOTER */
