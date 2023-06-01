@@ -4,11 +4,11 @@
   --box: #595959;
   --background: #020000;
   --card: #17141d;
-  --btn: rgba(69, 9, 9, 0.548);
+  --btn: rgba(33, 4, 4, 0.334);
 }
 
 /* NAVBAR */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .navbar ul {
     background: var(--btn);
     width: 100%;
@@ -41,13 +41,22 @@
   }
 }
 /* HERO-SECTION */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .hero-img img {
     display: none;
   }
+  .hero-text {
+    margin: 0 30px 0 0;
+  }
+  .hero-text h5 {
+    font-size: 27px;
+  }
+  .hero-text h2 {
+    font-size: 30px;
+  }
 }
 /* ABOUT-US */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .container-text-about {
     display: flex;
     flex-direction: column;
@@ -71,32 +80,8 @@
     padding: 15px;
   }
   .icons-about {
-    color: white;
+    display: none;
   }
-  .icons-about ul {
-    display: flex;
-    flex-direction: row;
-  }
-  .icons-about ul li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 11px;
-    font-weight: 100;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    background-color: rgb(240, 240, 245);
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px; /*Safari y Chrome*/
-    -moz-border-radius: 10px; /*Firefox*/
-    -o-border-radius: 10px; /*Opera*/
-    -ms-border-radius: 10px; /*IE 8*/
-    color: black;
-  }
-
   .icons-about ul li:hover {
     transition: 0.5s ease-out;
     background: var(--btn);
@@ -104,21 +89,30 @@
   }
 }
 /* CARD */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .container-card {
     padding: 50px;
   }
   .card {
     height: 150;
   }
+  .emptybar {
+    background-color: var(--box);
+    width: 80%;
+    height: 100%;
+  }
   .card:hover ~ .card {
     position: relative;
     left: 40px;
     transition: 0.4s ease-out;
   }
+  .card:hover .filledbar {
+    width: 100px;
+    transition: 0.4s ease-out;
+  }
 }
 /* FORM-CONSULT */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   /* FORM-CONSULT */
   .consult-form {
     height: 50rem;
@@ -194,7 +188,7 @@
   }
 }
 /* DETAILS */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .map {
     display: none;
   }
