@@ -1,4 +1,4 @@
-##"REFRIGERACION F R"
+## "REFRIGERACION F R"
 
 Este es el **primer proyecto** realizado en base a las siguientes tecnologias:
 
