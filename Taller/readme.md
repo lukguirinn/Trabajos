@@ -26,13 +26,22 @@ He utilizado este espacio que nos brindo NUCBA para poder hacer algo de forma re
 
 4. Contiene una seccion ABOUT-US, en la cual esta mas orientada a quienes somos y como surgimos con algunos conceptos en relacion a nuestros servicios.
 
-👉 Debe contar con una sección de cards con imágenes. Estas cards pueden ser de producto o de información ( En caso de ser de producto, debe tener un título, un precio y un botón de compra) 5. Contiene un seccion de CARD, las cuales son tres:
-1- Hace referencia a la marca mas trabajadas en el taller.
-2-Hace referencia en las otras marcas pero menos pedidas.
-3-
-👉 Debe contener una sección de contacto (Puede tener un formulario de contacto y la información de contacto y localización de la página, así como también un iframe con un mapa).
-👉 Debe contar con un footer.
-👉 Deberá contar con una página de login y una de registro (externas a la landing pero vinculadas a la misma, y de las cuales se pueda volver a la landing).
-👉 Debe ser responsive, adaptable a todos los dispositivos y poseer menú hamburguesa(que sea funcional usando el método que vimos en clase) para aquellas resoluciones en las que sea necesario.
-👉 No pueden usar Lorem, piensen una idea de página y que los textos sean acordes a su página.
-👉 Deberán entregar el link de Github y el de Vercel. Asegúrense de que no tengan el repositorio en privado y de no entregar el link a su Dashboard propio en Vercel.
+5. Contiene un seccion de CARD, las cuales son tres:
+   A- Hace referencia a la marca mas trabajadas en el taller.
+   B- Hace referencia en las otras marcas pero menos pedidas.
+   C- Hace referencia a los servicios de envios que trabajamos.
+
+6. Contiene una seccion de CONSULTA y otra de DETAILS-SERVICE, en esta secciones podemos hallar un inframe, un formulario de consulta y diferentes tipos de informacion segun se necesite.
+
+7. Contiene un FOOTER con redes sociales y un botom que te redirecciona hacia la navbar.
+
+8. Esta complemente funcional para los dispositivos digitales.
+
+9. Este proyecto cuenta con un login y register que son autodirigidos al inicion a las diferentes seccions
+
+10. Como se ve ene link de arriba esta subido a github y perfectamente desployado en vercel
+
+---
+
+> Espero que disfruten del proyecto.
+> Muchas Gracias por su tiempo.
