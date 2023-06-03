@@ -89,7 +89,7 @@ html {
 .bars-menu span {
   height: 1.5px;
   width: 30px;
-  background: pink;
+  background: rgb(230, 230, 230);
   transition: transform 0.8;
   display: none;
 }

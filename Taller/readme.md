@@ -9,7 +9,8 @@ Este es el **primer proyecto** realizado en base a las siguientes tecnologias:
 
 ---
 
-####Punto de partida:
+#### Punto de partida:
+
 Este proyecto esta creado en el marco de la cursada de full stack, en el modulo de diseño web brindado por NUCBA.
 La tematica proviene de una pymes creada por mi abuelo materno hace ya mas de 20 años, es un taller dedicado a la reparacion de motores de la heladeras frigorificas, siempre fue dirigida por mi abuelo, el cual tambie ha trabajado con su hijo y en los veranos con alguno de sus nietos.
 He utilizado este espacio que nos brindo NUCBA para poder hacer algo de forma representativa.

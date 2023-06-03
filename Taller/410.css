@@ -1,0 +1,17 @@
+:root {
+  --Font-text: "Zilla Slab", serif;
+  --Font-title: "Asap Condensed", sans-serif;
+  --box: #595959;
+  --background: #020000;
+  --card: #17141d;
+  --btn: rgba(33, 4, 4, 0.334);
+}
+/* FORM-CONSULT */
+
+/* @media (max-width: 410px) {
+  form {
+    width: 50px;
+    display: none;
+  }
+} */
+/* FOOTER */
