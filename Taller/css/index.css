@@ -16,7 +16,7 @@ html {
   --box: #595959;
   --background: #020000;
   --card: #17141d;
-  --btn: rgba(69, 9, 9, 1);
+  --btn: rgb(66, 13, 13);
 }
 
 /* FONTS */
@@ -89,7 +89,7 @@ html {
 .bars-menu span {
   height: 1.5px;
   width: 30px;
-  background: rgb(230, 230, 230);
+  background: pink;
   transition: transform 0.8;
   display: none;
 }
@@ -422,8 +422,8 @@ html {
   align-items: center;
   flex-direction: column;
   gap: 15px;
-  background: #59595961;
-  box-shadow: 0 15px 25px rgba(255, 255, 255, 0.101);
+  background: #00000061;
+  box-shadow: 0 15px 25px rgba(255, 255, 255, 0.041);
   border-radius: 10px;
   -webkit-border-radius: 10px; /*Safari y Chrome*/
   -moz-border-radius: 10px; /*Firefox*/
@@ -435,10 +435,10 @@ html {
   color: transparent;
   background: rgb(83, 9, 9);
   background: linear-gradient(
-    to top 90deg,
+    90deg,
     rgba(83, 9, 9, 1) 0%,
     rgba(69, 9, 9, 1) 57%,
-    rgba(128, 128, 128, 1) 95%
+    rgba(128, 128, 128, 1) 98%
   );
   background-clip: var(--Font-text);
   font-size: 28px;
@@ -516,7 +516,7 @@ html {
   border: none;
 }
 .form button:hover {
-  background-color: gold;
+  background-color: var(--btn);
   scale: 125%;
   color: black;
   transition: 0.01;
@@ -690,7 +690,6 @@ html {
     #285aeb 90%
   );
   -webkit-background-clip: text;
-  /* Also define standard property for compatibility */
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(1.3);
