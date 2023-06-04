@@ -46,9 +46,8 @@ He utilizado este espacio que nos brindo NUCBA para poder hacer algo de forma re
 
 > **Cosas a tener en cuenta:**
 
-1. En la carpeta de css, se encuetra disponible las hojas de estilo de cada html.
-2. Hay un archivo _"mediaqueries.css"_, ese archivo contiene el responsive del index.
-3. Luego el **responsive** del _Login.html_ y del _"register.css"_ estan codeado en el la hoja de estilo correspondientes.
+1. Hay un archivo _"mediaqueries.css"_, ese archivo contiene el responsive del index.
+2. Luego el **responsive** del _Login.html_ y del _"register.css"_ estan codeado en el la hoja de estilo correspondientes.
 
 ---
 
