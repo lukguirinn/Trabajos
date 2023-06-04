@@ -127,6 +127,25 @@
     right: -30px;
   }
 }
+@media (max-width: 525px) {
+  .hero-text h5 {
+    font-size: 20px;
+  }
+  .hero-text h2 {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  .hero-text p {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+  .line-efect::before {
+    left: 10px;
+  }
+  .line-efect::after {
+    right: 10px;
+  }
+}
 @media (max-width: 410px) {
   .hero-text h5 {
     font-size: 20px;
@@ -188,11 +207,6 @@
   .section-about-us {
     height: 50rem;
   }
-  .icons-about {
-    display: none;
-  }
-}
-@media (max-width: 410px) {
   .icons-about {
     display: none;
   }
@@ -333,8 +347,8 @@
 }
 /* FOOTER */
 
-@media (max-width: 410px) {
+@media (max-width: 676px) {
   .footer-container {
-    height: 13rem;
+    height: 8rem;
   }
 }
