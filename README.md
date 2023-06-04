@@ -1,0 +1,1 @@
+Esta carpeta contiene todos los proyectos realizados en el marco del curso de "FULL STACK DEVELOPER"
