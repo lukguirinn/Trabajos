@@ -253,6 +253,12 @@
 }
 
 /* FORM-CONSULT */
+@media (max-width: 1200px) {
+  .details-payments {
+    padding: 20px;
+    margin-left: 200px;
+  }
+}
 
 @media (max-width: 992px) {
   .consult-form {
