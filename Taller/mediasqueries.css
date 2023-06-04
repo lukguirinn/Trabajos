@@ -188,6 +188,9 @@
   .section-about-us {
     height: 50rem;
   }
+  .icons-about {
+    display: none;
+  }
 }
 @media (max-width: 410px) {
   .icons-about {
